@@ -15,4 +15,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency "railties", "~> 3.2"
   gem.add_dependency "sass-rails", "~> 3.2"
   gem.add_dependency "bootstrap-sass", "~> 2.2.2.0"
+  gem.add_dependency "compass", "~> 0.12.2"
 end

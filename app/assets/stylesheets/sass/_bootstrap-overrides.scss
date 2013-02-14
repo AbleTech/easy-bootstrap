@@ -1,0 +1,49 @@
+/* ==========================================================================
+   BOOTSTRAP OVERRIDES / MAIN STYLES
+   ========================================================================== */
+
+body {
+  font-family: 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.navbar-inner {
+  background: white;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+footer {
+  border-top: 1px solid #d4d4d4;
+  margin: 40px 0 0 0;
+  padding: 20px 0;
+  text-align: center;
+  background: #d4d4d4;
+}
+
+.container-margin {
+  margin-bottom: 20px;
+}
+
+.btn {
+  border-radius: 3px;
+}
+
+.table-bordered thead:first-child tr:first-child>th:first-child, .table-bordered tbody:first-child tr:first-child>td:first-child {
+  -webkit-border-top-left-radius: none;
+  border-top-left-radius: none;
+  -moz-border-radius-topleft: none;
+}
+
+.showcase {
+  padding: 180px 0;
+  color: #FFFFFF;
+  background: #944242;
+  margin-bottom: 20px; 
+  text-align: center;
+}
+
+.showcase h1 {
+  font-size: 50px;
+}

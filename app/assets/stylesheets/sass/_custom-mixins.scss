@@ -1,0 +1,49 @@
+/* 
+MEDIA QUERIES
+COMPATIBILITY: CHROME, SAFARI, FIREFOX, IE 9+ ;
+USAGE: @include respond_to(mobile);
+=========================================================================
+*/
+
+$mobile_width: 479px;
+$tablet_width: 767px;
+$standard_screen: 959px;
+$large_screen: 1200px;
+
+@mixin respond_to($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: $mobile_width) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $mobile_width + 1) and (max-width: $tablet_width - 1) { @content; }
+  }
+  @else if $media == all_mobile {
+    @media only screen and (min-width: $tablet_width) { @content; }
+  }
+  @else if $media == standard_screen {
+    @media only screen and (min-width: $tablet_width + 1) and (max-width: $standard_screen - 1) { @content; }
+  }
+  @else if $media == large_screen {
+    @media only screen and (min-width: $standard_screen + 1) { @content; }
+  }
+}
+
+/* 
+CLEARFIX
+COMPATIBILITY: CHROME, SAFARI, FIREFOX, IE ;
+USAGE: @include clearfix;
+=========================================================================
+*/
+
+@mixin clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020"; 
+        display: block; 
+        height: 0; 
+        overflow: hidden; 
+    }
+    &:after {
+        clear: both;
+    }
+}

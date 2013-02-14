@@ -4,8 +4,7 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Ryan French"]
   gem.email         = ["ryan.french@abletech.co.nz"]
   gem.description   = %q{Abletech's version of Twitter Bootstrap}
-  gem.summary       = %q{easy-bootstrap provides common Abletech 
-                         styling }
+  gem.summary       = %q{easy-bootstrap provides common Abletech styling }
   gem.homepage      = "https://github.com/AbleTech/easy-bootstrap"
 
   gem.files = Dir["{lib,app}/**/*"] + ["README.md","LICENSE"]

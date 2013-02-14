@@ -1,5 +1,5 @@
 module Easy
-  module Rails
+  module Bootstrap
     class Engine < ::Rails::Engine
     end
   end

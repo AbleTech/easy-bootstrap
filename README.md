@@ -1,7 +1,5 @@
 ## Easy Bootstrap Gem
 
-===
-
 **Step 1** – Add the following to your gemfile
 
 <pre>

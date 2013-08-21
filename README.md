@@ -1,29 +1,23 @@
-# Easy::Bootstrap
+## Easy Bootstrap Gem
 
-TODO: Write a gem description
+===
 
-## Installation
+**Step 1** – Add the following to your gemfile
 
-Add this line to your application's Gemfile:
+<pre>
+gem 'easy-bootstrap'
+</pre>
 
-    gem 'easy-bootstrap'
+**Step 2** – Run a bundle install
 
-And then execute:
+<pre>
+$ bundle install
+</pre>
 
-    $ bundle
+**Step 3** – Require the easy-bootstrap css in your manifest file
 
-Or install it yourself as:
-
-    $ gem install easy-bootstrap
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+<pre>
+/*
+ *= require easy-bootstrap
+*/
+</pre>

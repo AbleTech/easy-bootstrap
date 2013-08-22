@@ -22,14 +22,17 @@ $large_screen: 1200px;
 }
 
 @mixin clearfix {
-    zoom:1;
-    &:before, &:after {
-        content: "\0020"; 
-        display: block; 
-        height: 0; 
-        overflow: hidden; 
-    }
-    &:after {
-        clear: both;
-    }
+  &:after {
+    content:"";
+    display:table;
+    clear:both;
+  }
+}
+
+@mixin prefix($name, $value) {
+  -webkit-#{$name}: $value;
+  -moz-#{$name}: $value;
+  -ms-#{$name}: $value;
+  -o-#{$name}: $value;
+  #{$name}: $value;
 }

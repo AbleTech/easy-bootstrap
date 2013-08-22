@@ -1,6 +1,6 @@
 ## Easy Bootstrap Gem
 
-The easy bootstrap gem provides a simple way to drop in bootstrap and compass into your project. Additionally you can add easy bootstrap extras which will include a set of handy mixins.
+**The easy bootstrap gem provides a simple way to drop in bootstrap and compass into your project. Additionally you can add easy bootstrap extras which will include a set of handy mixins.**
 
 **Step 1** – Add the following to your gemfile
 
@@ -35,11 +35,9 @@ application.css --> application.scss
 
 ===
 
-### Notes
+### Important Notes
 
-Compass is known to break on rails 4 projects so this gem will only work on rails 3 projects.
+**Compass is known to break on rails 4 projects so this gem will only work on rails 3 projects.**
 
 ===
-
-### Easy Bootstrap Extras
 

@@ -1,29 +1,109 @@
-# Easy::Bootstrap
+## Easy Bootstrap Gem
 
-TODO: Write a gem description
+**The easy bootstrap gem provides a simple way to drop in bootstrap and compass into your project. Additionally you can add easy bootstrap extras which will include a set of handy mixins.**
 
-## Installation
+***
 
-Add this line to your application's Gemfile:
+**Step 1** – Add the following to your gemfile
 
-    gem 'easy-bootstrap'
+<pre>
+gem 'easy-bootstrap'
+</pre>
 
-And then execute:
+**Step 2** – Run a bundle install
 
-    $ bundle
+<pre>
+$ bundle install
+</pre>
 
-Or install it yourself as:
+**Step 3** – Rename your application.css manifest to application.scss and remove requires
 
-    $ gem install easy-bootstrap
+<pre>
+application.css --> application.scss
+</pre>
 
-## Usage
+**Step 4** – Import easy-bootstrap (We use import so all mixins and variables work instead of require)
 
-TODO: Write usage instructions here
+<pre>
+@import 'easy-bootstrap';
+</pre>
 
-## Contributing
+**Optional** – Import easy-bootstrap-extras for some extra mixins
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+<pre>
+@import 'easy-bootstrap';
+@import 'easy-bootstrap-extras';
+</pre>
+
+***
+
+### Notes
+
+**Compass is known to break on rails 4 projects so this gem will only work on rails 3 projects.**
+
+**Bootstrap-sass hasnt finished upgrading to Bootstrap 3 yet, so will just have to wait and keep using Bootstrap 2.**
+
+***
+
+### Mixins
+
+**For these mixins to work make sure you import the easy-bootstrap-extras in your manifest as noted above.**
+
+***
+
+#### Respond To Mixin
+
+**The respond to mixin is a simple way of doing media queries on elements, instead of having a media stylesheet. You can simply include this on the element. Below are the different widths/devices you can target.**
+
+<pre>
+@include respond_to(mobile) { }
+@include respond_to(mobile-landscape) { }
+@include respond_to(mobile-portrait) { }
+@include respond_to(tablet) { }
+@include respond_to(tablet-landscape) { }
+@include respond_to(tablet-portrait) { }
+@include respond_to(desktop) { }
+@include respond_to(large-screen) { }
+</pre>
+
+***
+
+#### Clearfix Mixin
+
+**This is a simple clearfix which you can include on any element. It makes use of Nicolas Gallaghers micro clearfix.**
+
+<pre>
+@include clearfix;
+</pre>
+
+**Outputs:**
+
+<pre>
+&:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+</pre>
+
+***
+
+#### Prefix Mixin
+
+**This is a simple mixin so you can add a rule and the mixin will automatically prefix the browser rules for you.**
+
+<pre>
+@include prefix(transform, scale(0.8));
+</pre>
+
+**Outputs:**
+
+<pre>
+-webkit-transform: scale(0.8);
+-moz-transform: scale(0.8);
+-ms-transform: scale(0.8);
+-o-transform: scale(0.8);
+transform: scale(0.8);
+</pre>
+
+***

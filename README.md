@@ -19,3 +19,16 @@ $ bundle install
  *= require easy-bootstrap
 */
 </pre>
+
+**Optional** – Require easy-bootstrap-extras for some extra mixins
+
+<pre>
+/*
+ *= require easy-bootstrap
+ *= require easy-bootstrap-extras
+*/
+</pre>
+
+### Notes
+
+Compass is known to break on rails 4 projects so this gem will only work on rails 3 projects.

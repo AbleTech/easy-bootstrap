@@ -16,13 +16,13 @@ gem 'easy-bootstrap'
 $ bundle install
 </pre>
 
-**Step 3** – Rename your application.css manifest to application.scss
+**Step 3** – Rename your application.css manifest to application.scss and remove requires
 
 <pre>
 application.css --> application.scss
 </pre>
 
-**Step 4** – Import easy-bootstrap (We use import so all mixins and variables work)
+**Step 4** – Import easy-bootstrap (We use import so all mixins and variables work instead of require)
 
 <pre>
 @import 'easy-bootstrap';

@@ -1,8 +1,4 @@
+@import 'compass/reset';
 @import 'bootstrap';
-
-/* @import 'compass'; */
-
-@import 'sass/responsive-tables';
-@import 'sass/custom-mixins';
-@import 'sass/bootstrap-overrides';
-@import 'sass/layout';
+@import 'bootstrap-responsive';
+@import 'compass/css3';
